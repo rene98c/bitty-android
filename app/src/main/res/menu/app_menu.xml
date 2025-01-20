@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/configure_portfolio"
+        android:title="@string/configure_portfolio" >
+    </item>
+    <item android:id="@+id/show_bitcoin_price"
+        android:title="@string/show_bitcoin_price" >
+    </item>
+    <item android:id="@+id/show_total_bitcoin"
+        android:title="@string/show_total_bitcoin" >
+    </item>
+    <item android:id="@+id/show_total_dollars"
+        android:title="@string/show_total_dollars" >
+    </item>
+</menu>

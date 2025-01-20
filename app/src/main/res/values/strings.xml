@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Bitty Price</string>
+    <string name="configure_portfolio">Configure portfolio</string>
+    <string name="show_bitcoin_price">Show Bitcoin price</string>
+    <string name="show_total_bitcoin">Show Total in Bitcoin</string>
+    <string name="show_total_dollars">Show Total in Dollars</string>
+
+    <!-- Portfolio view -->
+    <string name="title_activity_settings">Portfolio</string>
+    <string name="new_portfolio_entry">New portfolio entry</string>
+    <string name="edit_portfolio_entry">Edit portfolio entry</string>
+    <string name="add">Add</string>
+    <string name="apply">Apply</string>
+    <string name="remove">Remove</string>
+    <string name="remove_all">Remove all</string>
+    <string name="amount">Amount</string>
+    <string name="symbol">Name</string>
+    <string name="pair">Ticker</string>
+    <string name="amount_hint">Amount in portfolio</string>
+    <string name="symbol_hint">Cryptocurrency name</string>
+    <string name="pair_hint">Trading name</string>
+
+
+
+    <string name="text_input_placeholder">Text input placeholder</string>
+</resources>

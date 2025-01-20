@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/lblSymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/symbol"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/add"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnDelete"
+        app:layout_constraintTop_toBottomOf="@+id/tbPair" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/remove"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnApply"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbPair" />
+
+    <EditText
+        android:id="@+id/tbPair"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints="name"
+        android:ems="10"
+        android:hint="@string/pair_hint"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/lblPair"
+        app:layout_constraintTop_toBottomOf="@+id/tbAmount" />
+
+    <TextView
+        android:id="@+id/lblPair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="34dp"
+        android:text="@string/pair"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblAmount" />
+
+    <TextView
+        android:id="@+id/lblAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="34dp"
+        android:text="@string/amount"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblSymbol" />
+
+    <EditText
+        android:id="@+id/tbAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints="name"
+        android:ems="10"
+        android:hint="@string/amount_hint"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/lblAmount"
+        app:layout_constraintTop_toBottomOf="@+id/tbSymbol" />
+
+    <EditText
+        android:id="@+id/tbSymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints="name"
+        android:ems="10"
+        android:hint="@string/symbol_hint"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/lblSymbol"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
